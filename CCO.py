@@ -81,21 +81,7 @@ def busqueda_mezcla():
     #Calcular coste
     coste=(t1.size*t*math.ceil(math.log2(t1.size)))+t1.size+t2.size+t1.cost+t2.cost
     print(f"El coste por busqueda por mezcla es de {coste}")
-    return coste
-
-def calcular_union():
-    #Muestra la lista de tablas
-    print("Lista de Tablas")
-    ver_tablas()
-    #Elige la primera tabla
-    o1=int(input("Elige la tabla a ordenar a calcular: "))
-    t1=lista_tabla[o1-1]
-    #Elige la segunda tabla
-    o2=int(input("Elige la tabla no ordenada a calcular: "))
-    t2=lista_tabla[o2-1]
-    #Elige el multiplicador
-    t=int(input("Elige el factor de multiplicacion: "))
-    
+    return coste    
 
 def borrar_tablas():
     global lista_tabla
@@ -116,16 +102,15 @@ def imprimir_titulo():
 #Programa principal
 def main():
     while True:
-        print("Menu principal")
-        print("\t[1] Crear una tabla:")
-        print("\t[2] Ver lista de tablas:")
-        print("\t[3] Calcular fuerza bruta:")
-        print("\t[4] Indice más busqueda por indices:")
-        print("\t[5] Ordenacion más busqueda por mezcla:")
-        print("\t[8] Calcular union:")
-        print("\t[9] Borrar tablas:")
-        print("\t[0] Salir:")
-        opt=int(input("Opcion: "))
+        print(">>> Menu principal")
+        print("[1] Crear una tabla:")
+        print("[2] Ver lista de tablas:")
+        print("[3] Calcular fuerza bruta:")
+        print("[4] Indice más busqueda por indices:")
+        print("[5] Ordenacion más busqueda por mezcla:")
+        print("[9] Borrar tablas:")
+        print("[0] Salir:")
+        opt=int(input("\nOpcion: "))
         print()
         switch = {
             1:crear_tabla,
@@ -133,7 +118,6 @@ def main():
             3:fuerza_bruta,
             4:busqueda_indices,
             5:busqueda_mezcla,
-            8:calcular_union,
             9:borrar_tablas,
             0:exit
         }
