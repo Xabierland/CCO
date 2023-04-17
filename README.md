@@ -1,2 +1,2 @@
 # CCO
-Calculadora de costes de operaciones para las select de MySQL
+Calculadora de costes de operación JOIN de MySQL
