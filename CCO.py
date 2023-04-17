@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#Calculador de Costes de Operaciones de Select en MySQL
+#Calculadora de costes de operación JOIN de MySQL
 
 #Imports
 import math
