@@ -95,6 +95,7 @@ def calcular_union():
     t2=lista_tabla[o2-1]
     #Elige el multiplicador
     t=int(input("Elige el factor de multiplicacion: "))
+    
 
 def borrar_tablas():
     global lista_tabla
@@ -105,6 +106,13 @@ def exit():
 
 def limpiar_pantalla():
     os.system('cls' if os.name == 'nt' else 'clear')
+
+def imprimir_titulo():
+    archivo=open("title","r",encoding='utf-8')
+    title=archivo.read()
+    print(title)
+    archivo.close()
+
 #Programa principal
 def main():
     while True:
@@ -136,5 +144,5 @@ def main():
 # Comprobar si se esta ejecutando como script principal
 if __name__ == '__main__':
     limpiar_pantalla()
-    #titulo
+    imprimir_titulo()
     main()
