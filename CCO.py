@@ -32,6 +32,7 @@ def ver_tablas():
     for x in lista_tabla:
         i=i+1
         print(f"[{i}] \t\t{x.nombre}\t\t{x.size}\t\t{x.cost}")
+    print()
 
 def fuerza_bruta():
     #Muestra la lista de tablas
